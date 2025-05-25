@@ -1,0 +1,81 @@
+
+:root {
+    --color-gunMetal: #292f36;
+    --color-cyan: #4ecdc4;
+    --color-cyanH:rgb(63, 168, 161);
+    --color-white: #f7fff7;
+    --color-whiteH:rgba(226, 226, 226, 0.733);
+    --color-coolGray: #7d84b2;
+    --color-coolGrayH: #7d84b2af;
+    --color-blue: #0075f2;
+}
+header{
+    background-color: var(--color-gunMetal); 
+    box-shadow: #292f3641 0px 10px 10px 10px;
+}
+footer{
+    background-color: var(--color-gunMetal); 
+
+}
+
+.txt_roboto{
+    font-family: "Roboto", sans-serif;
+    font-weight: medium;
+}
+nav .nav-link.active_txt {
+    font-family: "Roboto", sans-serif;
+    font-weight: medium;
+    color: var(--color-cyan);
+}
+nav .nav-link.no_active_txt{
+    font-family: "Roboto", sans-serif;
+    font-weight: medium;
+    color: var(--color-white);
+    font-weight: normal;
+}
+nav .nav-link.no_active_txt:hover{
+    color: var(--color-whiteH);
+    font-weight: normal;
+}
+.btn.btn-start{
+    color:var(--color-white);
+    background-color: var(--color-coolGray);
+    font-weight: 700;
+    font-weight: bold;
+    transition: all .5s;
+}
+main .btn.btn-start:hover{
+
+    color:var(--color-white);
+    background-color: var(--color-coolGray);
+    box-shadow: var(--color-coolGray) 0px 2px 10px 2px;
+}
+header .btn.btn-start:hover{
+    background-color: var(--color-coolGrayH);
+    color:var(--color-white);
+}
+.txt-title{
+    font-family: "Mystery Quest", system-ui;
+    font-weight: 400;
+}
+.shade{
+    color: var(--color-cyan);
+}
+.mtb-5{
+    margin-top: 5rem;
+    margin-top: 5rem;
+}
+
+footer .text-white:hover {
+    text-decoration: underline;
+    color: var(--color-cyan) !important; /* Puedes usar un color de tu paleta */
+}
+.txt-info{
+    font-family: "Mystery Quest", system-ui;
+    font-weight: 400;
+
+    color: var(--color-cyan); /* Puedes usar un color de tu paleta */
+}
+.txt-info:hover{
+    color: var(--color-cyanH); /* Puedes usar un color de tu paleta */
+}
