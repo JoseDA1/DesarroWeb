@@ -9,9 +9,16 @@
     --color-coolGrayH: #7d84b2af;
     --color-blue: #0075f2;
 }
+*{
+    font-family: "Roboto", sans-serif;
+    font-weight: medium;
+}
 header{
     background-color: var(--color-gunMetal); 
     box-shadow: #292f3641 0px 10px 10px 10px;
+}
+main{
+    min-height: 32rem;
 }
 footer{
     background-color: var(--color-gunMetal); 
@@ -44,6 +51,14 @@ nav .nav-link.no_active_txt:hover{
     font-weight: bold;
     transition: all .5s;
 }
+.btn.btn-create{
+    background-color: var(--color-cyan);
+    color: var(--color-white);
+}
+.btn.btn-create:hover{
+    background-color: var(--color-cyanH);
+    color: var(--color-white);
+}
 main .btn.btn-start:hover{
 
     color:var(--color-white);
@@ -63,7 +78,7 @@ header .btn.btn-start:hover{
 }
 .mtb-5{
     margin-top: 5rem;
-    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 footer .text-white:hover {
@@ -79,3 +94,32 @@ footer .text-white:hover {
 .txt-info:hover{
     color: var(--color-cyanH); /* Puedes usar un color de tu paleta */
 }
+
+.table th,
+.table td {
+  vertical-align: middle;
+  font-size: 0.95rem;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f1f7fd;
+}
+
+.badge {
+  font-size: 0.75rem;
+  margin: 0 2px;
+  cursor: pointer;
+}
+.form-products {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    border-radius: 1rem;
+  }
+  
+  .form-products h4 {
+    font-weight: 500;
+  }
+  body {
+    background: linear-gradient(to right, var(--color-white), var(--color-whiteH));
+  }
