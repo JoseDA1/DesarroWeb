@@ -82,9 +82,7 @@ header .navbar {
 }
 
 header img {
-    max-height: 100px; 
-    height: auto;
-    width: auto;
+    height: 4rem;
 }
 
 
@@ -101,7 +99,7 @@ header .btn.btn-start {
 
 .txt-title{
     font-family: "Mystery Quest", system-ui;
-    font-weight: 400;
+    font-weight: 400 !important;
 }
 .shade{
     color: var(--color-cyan);
