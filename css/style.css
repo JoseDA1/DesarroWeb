@@ -1,0 +1,155 @@
+
+:root {
+    --color-gunMetal: #292f36;
+    --color-cyan: #4ecdc4;
+    --color-cyanH:rgb(63, 168, 161);
+    --color-white: #f7fff7;
+    --color-whiteH:rgba(226, 226, 226, 0.733);
+    --color-coolGray: #7d84b2;
+    --color-coolGrayH: #7d84b2af;
+    --color-blue: #0075f2;
+}
+*{
+    font-family: "Roboto", sans-serif;
+    font-weight: medium;
+}
+header{
+    background-color: var(--color-gunMetal); 
+    box-shadow: #292f3641 0px 10px 10px 10px;
+}
+
+main{
+    min-height: 80vh;
+}
+footer{
+    background-color: var(--color-gunMetal); 
+
+}
+
+.txt_roboto{
+    font-family: "Roboto", sans-serif;
+    font-weight: medium;
+}
+nav .nav-link.active_txt {
+    font-family: "Roboto", sans-serif;
+    font-weight: medium;
+    color: var(--color-cyan);
+}
+nav .nav-link.no_active_txt{
+    font-family: "Roboto", sans-serif;
+    font-weight: medium;
+    color: var(--color-white);
+    font-weight: normal;
+}
+nav .nav-link.no_active_txt:hover{
+    color: var(--color-whiteH);
+    font-weight: normal;
+}
+.btn.btn-start{
+    color:var(--color-white);
+    background-color: var(--color-coolGray);
+    font-weight: 700;
+    font-weight: bold;
+    transition: all .5s;
+}
+.btn.btn-create{
+    background-color: var(--color-cyan);
+    color: var(--color-white);
+}
+.btn.btn-create:hover{
+    background-color: var(--color-cyanH);
+    color: var(--color-white);
+}
+main .btn.btn-start:hover{
+
+    color:var(--color-white);
+    background-color: var(--color-coolGray);
+    box-shadow: var(--color-coolGray) 0px 2px 10px 2px;
+}
+header .btn.btn-start:hover{
+    background-color: var(--color-coolGrayH);
+    color:var(--color-white);
+}
+
+
+header {
+    padding: 0.5rem 0; 
+}
+
+header .navbar {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+header img {
+    max-height: 100px; 
+    height: auto;
+    width: auto;
+}
+
+
+.navbar-nav .nav-link {
+    padding: 0.3rem 0.8rem;
+    font-size: 1rem;
+}
+
+
+header .btn.btn-start {
+    padding: 0.4rem 1.2rem;
+    font-size: 0.95rem;
+}
+
+.txt-title{
+    font-family: "Mystery Quest", system-ui;
+    font-weight: 400;
+}
+.shade{
+    color: var(--color-cyan);
+}
+.mtb-5{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+footer .text-white:hover {
+    text-decoration: underline;
+    color: var(--color-cyan) !important; /* Puedes usar un color de tu paleta */
+}
+.txt-info{
+    font-family: "Mystery Quest", system-ui;
+    font-weight: 400;
+
+    color: var(--color-cyan); /* Puedes usar un color de tu paleta */
+}
+.txt-info:hover{
+    color: var(--color-cyanH); /* Puedes usar un color de tu paleta */
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+  font-size: 0.95rem;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f1f7fd;
+}
+
+.badge {
+  font-size: 0.75rem;
+  margin: 0 2px;
+  cursor: pointer;
+}
+.form-products {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    border-radius: 1rem;
+  }
+  
+  .form-products h4 {
+    font-weight: 500;
+  }
+  body {
+    background: linear-gradient(to right, var(--color-white), var(--color-whiteH));
+  }

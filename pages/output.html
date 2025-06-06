@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mystery+Quest&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <title>System</title>
+</head>
+<body>
+    <header class="c-nav u-high">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Inventary System</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar" aria-controls="menuNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mx-5" id="menuNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-3">
+                    <a class="nav-link no_active_txt txt_roboto" href="./inventary.html">Inventary</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                    <a class="nav-link no_active_txt txt_roboto" href="./register-product.html">Registrar</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                      <a class="nav-link active_txt  txt_roboto" href="./output.html">Salida</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                      <a class="nav-link no_active_txt txt_roboto" href="./record.html">Movimiento</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                    <a class="nav-link no_active_txt txt_roboto" href="#">Contactanos</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="form-products container mt-5 p-4 shadow rounded bg-white">
+              <h4 class="mb-4 text-center txt-title">Generar Salida</h4>
+              <form class="row g-4">
+                <div class="col-md-3">
+                  <label for="date" class="form-label">Fecha</label>
+                  <input type="date" class="form-control" id="date">
+                </div>
+                <div class="col-md-3">
+                  <label for="productName" class="form-label">Codigo Producto</label>
+                  <input type="text" class="form-control" id="productName">
+                </div>
+          
+                <div class="col-md-6">
+                    <label for="customer" class="form-label">Nombre del cliente</label>
+                    <input type="text" class="form-control" id="customer">
+                </div>
+                
+                <div class="col-md-5">
+                  <label for="quantity" class="form-label">Producto</label>
+                  <select name="quantity" id="quantity" class="form-control">
+                    <option value="1">Pr1</option>
+                    <option value="2">Pr2</option>
+                    <option value="3">Pr3</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label for="price" class="form-label">Precio</label>
+                  <input disabled type="number" step="0.01" class="form-control" id="price">
+                </div>
+                <div class="col-md-3">
+                  <label for="price" class="form-label">Cantidad</label>
+                  <input type="number" step="0.01" class="form-control" id="price">
+
+                </div>
+                <div class="col-md-1 d-flex justify-content-center align-items-end">
+                    <button class="btn btn-create">Agregar</button>
+
+                </div>
+
+                <table class="table table-hover align-middle text-center mt-5">
+                <thead class="table-light">
+                  <tr>
+                    <th class="col-1 table-info">ID</th>
+                    <th class="col-1 table-info">Fecha</th>
+                    <th class="col-3 table-info">Producto</th>
+                    <th class="col-1 table-info">Cantidad</th>
+                    <th class="col-1 table-info">Precio</th>
+                    <th class="col-1 table-info">Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="col-1">5012</td>
+                    <td class="col-1">06/05/2025</td>
+                    <td class="col-3">Audifonos inalambricos</td>
+                    <td class="col-1">2</td>
+                    <td class="col-1">50k</td>
+                    <td class="col-1 table-secondary">100k</td>
+
+                  </tr>
+                  
+                </tbody>
+              </table>
+          
+                <div class="col-12 text-end">
+                  <a type="submit" class="btn btn-create px-4" href="./record.html">Generar</a>
+                </div>
+              </form>
+            </div>
+          </main>
+          
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container text-center">
+          <p class="mb-2">© 2025 Inventary System. Todos los derechos reservados.</p>
+      
+          <div class="mb-3">
+            <a href="#" class="text-white me-3 text-decoration-none">Política de privacidad</a>
+            <a href="#" class="text-white me-3 text-decoration-none">Términos y condiciones</a>
+            <a href="#" class="text-white text-decoration-none">Contacto</a>
+          </div>
+      
+          <div>
+            <a href="#"><i class="bi bi-facebook text-white me-3"></i></a>
+            <a href="#"><i class="bi bi-twitter text-white me-3"></i></a>
+            <a href="#"><i class="bi bi-instagram text-white"></i></a>
+          </div>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
